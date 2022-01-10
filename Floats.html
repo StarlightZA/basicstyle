@@ -1,0 +1,85 @@
+<html>
+
+	<head> 
+	
+		<title>Floats</title>
+		
+		<meta charset = "utf-8" />
+		<meta http-equiv= "Content-type" content= "text/html; charset=utf-8"/>
+		<meta name = "viewport" content ="width=device-width; initial scale =1" />
+			
+			
+				<style type="text/css">
+					/*  using a . for classes */
+					
+					
+					.pink
+					{
+					color:pink;
+					}
+
+					.small{
+					
+					font-size:50%;
+					}
+				
+				.underlined
+					{
+					
+					text-decoration: underline;
+					}
+				
+				/*using the # for ID's- only use an ID once per page */
+				
+				#yellow
+				{
+				color:#8258FA;
+				}
+				
+				#first-section{
+				color:blue;
+				background-color:cyan;
+				width:200px;
+				float:right; /* moves this next to the right of the page. 
+								if you want them next to each other, make both floats =left*/
+				}
+				
+				#second_section{
+				background-color:yellow;
+				width:20%;
+				float:left;
+				}
+				
+				.clear_float
+				{
+				clear:both;
+				}
+				</style>		
+			
+	</head>
+	
+	
+	<body bgcolor ="#E6E6FA">
+		<div id="first-section">
+			<h1 >CSS is not cool</h1>  <!--using two classes -->
+			<p > The fox was blue </p>	
+			
+		</div>
+		<div id="second_section">
+			<p class= "small">Sandwiches are cool </p>
+			<h1 class ="pink"> This is a pink header <span class="underlined">with CSS<span> </h1>
+		
+		<p id= "yellow">Sandwiches are yellow </p> 
+		</div>
+		
+		<div class= "clear_float"> <!--add in to make paragraph appear under floats -->
+			<p> this paragraph is not floated </p> <!--fills in -->
+		</div>
+	
+	</body>
+
+
+
+
+
+</html>
